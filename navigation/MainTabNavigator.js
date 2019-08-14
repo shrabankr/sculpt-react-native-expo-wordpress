@@ -4,6 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
+import PostsScreen from '../screens/PostsScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -22,18 +23,30 @@ const HomeStack = createStackNavigator(
 HomeStack.navigationOptions = {
   tabBarLabel: 'Home',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
-    />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? `ios-home`  : 'md-home'} />
   ),
 };
 
 HomeStack.path = '';
+
+const PostsStack = createStackNavigator(
+  {
+    Posts: PostsScreen,
+  },
+  {
+    headerMode: 'none'
+  },
+  config
+);
+
+PostsStack.navigationOptions = {
+  tabBarLabel: 'Posts',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'logo-wordpress' : 'logo-wordpress'} />
+  ),
+};
+
+PostsStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
@@ -69,6 +82,7 @@ SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
+  PostsStack,
   LinksStack,
   SettingsStack,
 });

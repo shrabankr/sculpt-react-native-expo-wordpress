@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Sculpt React Native Starter (Expo)",
-    "slug": "sculpt-react-native-starter-expo",
+    "name": "Sculpt React Native & WordPress (Expo)",
+    "slug": "sculpt-react-native-wordpress-expo",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
