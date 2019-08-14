@@ -1,6 +1,6 @@
-# Sculpt React Native Starter (Expo)
+# Sculpt React Native & WordPress Starter (Expo)
 
-A basic React Native setup with Expo to get an app started quickly.
+A basic React Native & WordPress setup with Expo to get an app started quickly.
 
 ## Requirements
 
@@ -33,3 +33,5 @@ $ expo start
 Follow [Expo Documentation](https://docs.expo.io/versions/latest/workflow/up-and-running/#open-the-app-on-your-phone-or) to get app running on devices.
 
 [React Native Paper](https://reactnativepaper.com/) has been added. See list of examples in this [expo snack](https://snack.expo.io/@satya164/github.com-callstack-react-native-paper:example) to get some basic components.
+
+Posts are pulled in via the WordPress REST API on the PostsScreen.js currently.
