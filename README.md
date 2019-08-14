@@ -19,13 +19,13 @@ $ yarn global add expo-cli
 
 Clone repo:
 ```bash
-$ git clone https://github.com/ericmalcolm/sculpt-react-native-starter-expo.git
+$ git clone https://github.com/ericmalcolm/sculpt-react-native-expo-wordpress.git
 ```
 
 Navigate to directory, install dependancies, and start the app:
 
 ```bash
-$ cd sculpt-react-native-starter-expo
+$ cd sculpt-react-native-expo-wordpress
 $ yarn
 $ expo start
 ```
